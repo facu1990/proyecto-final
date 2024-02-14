@@ -3,66 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locales</title>
+    <meta name="description" content="Vení a conocer nuestros locales de Villa Urquiza y Villa Crespo">
+    <meta name="keywords" content="Ropa de mujer, Lima, Lima Baires, Colección invierno, Colección verano, Moda, CABA, Buenos Aires, Villa urquiza, Villa crespo, nuestros locales">
+    <title>Producto</title>
+
+    <!--link de bt-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--link de mi css-->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-    <!--EMPIEZA HEADER-->
+<!--EMPIEZA HEADER-->
 
-    <header>
-        <a href="./index.html">
-            <img class="logo" src="../img/Lima-logo-negro.png" alt="Logo lima baires">
+<header class="container">
+    <div>
+        <a href="../index.html">
+            <img class="logo-lima" src="../img/Lima-logo-negro.png"  alt="Logo lima baires">
         </a>
 
-        <nav class="menu">
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="../pages/productos.html">PRODUCTOS</a></li>
-                <li><a href="../pages/locales.html">LOCALES</a></li>
-                <li><a href="../pages/nosotros.html">NOSOTROS</a></li>
-                <li><a href="../pages/contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/locales.html">LOCALES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/nosotras.html">NOSOTRAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>            
+            </div>      
         </nav>
 
-        <nav class="icon-menu">
+        <nav class="redes-header">
             <a href="https://www.instagram.com/_limabaires/" target="_blank">
-                <img class="icon-1" src="../img/instagram.png" alt="instagram">
+                <img src="../img/instagram.png">
             </a>
 
             <a href="https://www.tiktok.com/" target="_blank">
-                <img class="icon-2" src="../img/tiktok.png" alt="tiktok">
+                <img src="../img/tiktok.png">
             </a>
 
             <a href="https://www.behance.net/" target="_blank">
-                <img class="icon-3" src="../img/behance.png" alt="behance">
+                <img src="../img/behance.png">
             </a>
-        </nav> 
-
-        <nav class="menu-hamburguer">
-            <img src="../img/menu.png" alt="Menu hamburguesa">
         </nav>
+    </div>
+</header>
 
-    </header>
+<!--ABRE SECCION LOCALES-->
 
-    <!--ABRE TEXTO LOCALES-->
+<main>
 
     <div class="titulo-subtitulo">
         <h1 class="titulo">Nuestros locales</h1>
         <p class="subtitulo">Lorem ipsum dolor sit amet consectetur</p>    
     </div>
 
-    <div class="mapa-ciudad">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26287.406828750045!2d-58.47138559305114!3d-34.55543267572863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d28526611d%3A0xbcb585a9ddc70069!2sBelgrano%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1703650276845!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+    <section class="locales">
 
+        <div class="info-locales">
+            <div>
+                <h2>Villa Urquiza<h2>
+                <p>Mendoza 5046, CABA</p>
+                <h2>Horarios</h2>
+                <p>Lunes a Viernes 10 a 20 hs / Sábados 10 a 14 hs</p>
+                <a href="https://maps.app.goo.gl/fWYf27T79i3WTpn76" target="_blank" class="boton-visitar">Visitar</a>
+            </div>
+            <div>
+                <h2>Villa Crespo<h2>
+                <p>Av. Dorrego 1378, CABA</p>
+                <h2>Horarios</h2>
+                <p>Lunes a Viernes 10 a 20 hs / Sábados 10 a 14 hs</p>
+                <a href="https://maps.app.goo.gl/fWYf27T79i3WTpn76" target="_blank" class="boton-visitar">Visitar</a>
+            </div>
+        </div>
 
-    <!--SUSCRIBITE A NUESTRO NEWSLETTER-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.45354868239!2d-58.5158704209438!3d-34.61565465441903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires!5e0!3m2!1ses!2sar!4v1707365490540!5m2!1ses!2sar" width="1200px" height="750px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+<!--SUSCRIBITE A NUESTRO NEWSLETTER-->
 
     <section class="seccion-newsletter">
 
         <div class="titulo-subtitulo">
-            <h1 class="titulo">Suscribite a nuestro newsletter</h1>
+            <h2 class="titulo">Suscribite a nuestro newsletter</h2>
             <p class="subtitulo">y enterate todas nuestras novedades</p>
                 <div class="email-form">
                     <input type="email" placeholder="Ingresá tu correo electrónico">
@@ -70,7 +110,7 @@
         </div>
 
         <div class="seguinos-redes">
-            <h1 class="titulo">Seguinos</h1>
+            <h2 class="titulo">Seguinos</h2>
             <a href="https://www.instagram.com/_limabaires/" target="_blank">
                 <img src="../img/instagram.png">
             </a>
@@ -87,61 +127,85 @@
     </section>
     
 
-    <!--ABRE SITEMAP-->
+<!--ABRE SITEMAP-->
 
-    <section class="seccion-sitemap">
+    <section class="sitemap">
 
         <div class="texto-sitemap">
             <img class="logo-footer" src="../img/Lima-logo-negro.png" alt="Logo lima baires">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veritatis magni, similique eligendi impedit debitis amet officiis fuga.</p>
-            <h1 class="telefono">Contacto: (+54) 11 0000-0000</h1>
+            <p>En nuestra marca, encontrarás ese toque de estilo que te hace única. Desde looks relajados para el día a día hasta prendas que deslumbran en una noche especial, tenemos todo lo que necesitas para lucir fabulosa en cualquier ocasión.</p>
+            <h4>Contacto: (+54) 11 0000-0000</h4>
         </div>
 
         <div class="lista-sitemap">
-            <ul class="lista-uno-sitemap">
-                <h3>Mapa del sitio</h3>
-                <li>_Home</li>
-                <li>_Productos</li>
-                <li>_Locales</li>
-                <li>_Nosotros</li>
-                <li>_Contacto</li>
+            <ul>
+                <h4>Mapa del sitio</h4>
+                <li>
+                    <a href="../index.html">_Home</a>
+                </li>
+
+                <li>
+                    <a href="../pages/productos.html">_Productos</a>
+                </li>
+                <li>
+                    <a href="../pages/locales.html">_Locales</a>
+                </li>
+                <li>
+                    <a href="../pages/nosotras.html">_Nosotras</a>
+                </li>
+                <li>
+                    <a href="../pages/contacto.html">_Contacto</a>
+                </li>
             </ul>
         </div>
+
         <div class="lista-sitemap">
-            <ul class="lista-dos-sitemap">
-                <h3>Seguinos</h3>
-                <li>_Instagram</li>
-                <li>_Behance</li>
-                <li>_Lorem</li>
-                <li>_Lorem</li>
-                <li>_Lorem</li>
+            <ul>
+                <h4>Seguinos</h4>
+                <li>
+                    <a href="https://www.instagram.com/_limabaires">_Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/">_TikTok</a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/">_Behance</a>
+                </li>
             </ul>
         </div>
+
     </section>
 
-    <!--ABRE FOOTER-->
-    
-    <footer class="estilo-footer">
+</main>
 
-        <div class="Copyrigth">
-            <p>© Copyrigth 2024 Lima Baires Todos los derechos reservados</p>
-        </div>      
 
-        <div class="icon-footer">
-            <a href="https://www.instagram.com/_limabaires/" target="_blank">
-                <img src="../img/instagram.png">
-            </a>
+<!--ABRE FOOTER-->
 
-            <a href="https://www.tiktok.com/" target="_blank">
-                <img src="../img/tiktok.png">
-            </a>
+<footer class="estilo-footer">
 
-            <a href="https://www.behance.net/" target="_blank">
-                <img src="../img/behance.png">
-            </a>
-        </div>
+    <div class="copyrigth">
+        <p>© Copyrigth 2024. Lima Baires todos los derechos reservados</p>
+    </div>      
 
-    </footer>
+    <div class="icon-footer">
+        <a href="https://www.instagram.com/_limabaires/" target="_blank">
+            <img src="../img/instagram.png">
+        </a>
+
+        <a href="https://www.tiktok.com/" target="_blank">
+            <img src="../img/tiktok.png">
+        </a>
+
+        <a href="https://www.behance.net/" target="_blank">
+            <img src="../img/behance.png">
+        </a>
+    </div>
+
+</footer>
+
+    <!--script de bt-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
