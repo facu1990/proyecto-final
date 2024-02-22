@@ -3,7 +3,10 @@
 
 //import
 
-@import "utilidades/variables";
+@import "base/variables";
+
+@import "componentes/home";
+
 
 //nesting
 
@@ -37,48 +40,6 @@ a:link{
 a:visited{
     text-decoration: none;
     color: #000000;
-}
-
-/* estilos del header */
-
-.container{
-    width: 100%;
-    padding: 30px;
-    max-width: 2000px;
-    div{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center !important;
-        align-content: center !important;
-        font-size: 14px;
-        a{
-            .logo-lima{
-                width: 170px;
-            }
-        }
-        nav{
-            div{
-                .navbar-toggler{
-                    border: 2px solid #000000;
-                }
-            }
-        }
-        .redes-header{
-            @media screen and (max-width:768px){
-                display: none;
-            }
-            a{
-                img{
-                    width: 25px;
-                }
-                @media screen and (max-width:768px){
-                    display: none;
-                }
-            }
-        }
-    }
 }
 
 /* estilos de slide principal */
@@ -133,7 +94,7 @@ main{
             font-size: 25px;
             font-style: normal;
         }
-        .subtitulo{
+        .subtitulo{ 
             text-align: center;
             font-size: 14px;
         }        
@@ -162,7 +123,7 @@ main{
             
         .modulo-producto-home:active{
             transform: scale(0.9);
-            background-color: #9eed2f;
+            background-color: $color-lima;
         }
     }
     .slide-produccion{
@@ -187,8 +148,8 @@ main{
         align-content: center;
         div{
             .email-form input:focus-visible{
-                outline-color: #a9e159;
-                border-color: #a9e159;
+                outline-color: $color-lima;
+                border-color: $color-lima;
                 box-shadow: none;
             }
             .email-form input{
@@ -207,8 +168,9 @@ main{
             }
         }
         .seguinos-redes{
-            h2{
-                font-size: 20px;
+            .titulo{
+                font-size: 25px;
+                text-align: center;
             }
             a{
                 img{
@@ -280,7 +242,7 @@ main{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 10% 10% 8% 10%;
+        padding: 5% 10% 8% 10%;
         gap: 15px;
         .modulo-producto{
             img{
@@ -302,7 +264,7 @@ main{
                 width: 100px;
                 height: 30px;
                 padding: 5px;
-                background-color: #a9e159;
+                background-color: $color-lima;
                 color: #000000;
                 font-size: 14px;
                 font-weight: 600;
@@ -319,7 +281,7 @@ main{
             }
             .boton-ver-mas:active{
             transform: scale(0.9);
-            background-color: #9eed2f;
+            background-color: $color-lima;
             }
         }
     }
@@ -394,7 +356,7 @@ main{
             width: 200px;
             height: 40px;
             padding: 5px;
-            background-color: #a9e159;
+            background-color: $color-lima;
             color: #000000;
             font-size: 20px;    
             font-weight: 600;
@@ -411,7 +373,7 @@ main{
         }
         .boton-comprar:active{
         transform: scale(0.9);
-        background-color: #9eed2f;
+        background-color: $color-lima;
         }
     }
     .compra-exitosa {
@@ -456,7 +418,7 @@ main{
                     width: 100px;
                     height: 30px;
                     padding: 5px;
-                    background-color: #a9e159;
+                    background-color: $color-lima;
                     color: #000000;
                     font-size: 14px;    
                     font-weight: 600;
@@ -517,7 +479,7 @@ main{
                 text-align: justify;
                 align-items: center;
                 align-content: center;
-                padding-left: 150px;
+                padding-left: 50px;
                 padding-right: 50px;    
             }
         }
@@ -566,14 +528,14 @@ main{
 }
 
 .form-consulta input:focus-visible{
-    outline-color: #a9e159;
-    border-color: #a9e159;
+    outline-color: $color-lima;
+    border-color: $color-lima;
     box-shadow: none;
 }
 
 .input-consulta{
-    outline-color: #a9e159;
-    border-color: #a9e159;
+    outline-color: $color-lima;
+    border-color: $color-lima;
     box-shadow: none;
 }
 
@@ -639,7 +601,7 @@ main{
     margin-top: 15px;
     width: 100px;
     height: 30px;
-    background-color: #a9e159;
+    background-color: $color-lima;
     color: #000000;
     font-size: 14px;    
     font-weight: 600;
@@ -658,7 +620,7 @@ main{
 
 .clic-boton:active{
     transform: scale(0.9);
-    background-color: #9eed2f;
+    background-color: $color-lima;
 }
 
 .clic-action{

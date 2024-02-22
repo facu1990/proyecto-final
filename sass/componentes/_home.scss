@@ -1,4 +1,45 @@
-@import "../componentes/home"
+@import "../utilidades/variables";
 
 // estilos del header
+
+.container{
+    width: 100%;
+    padding: 30px;
+    max-width: 2000px;
+    div{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        font-size: 14px;
+        a{
+            .logo-lima{
+                width: 150px;
+            }
+        }
+        nav{
+            .navbar-toggler{
+                border: 2px solid #000000;
+            }
+            .container-fluid{
+                padding-right: 5px;
+            }
+        }
+        .redes-header{
+            @media screen and (max-width:830px){
+                display: none;
+            }
+            @media screen and (max-width:768px){
+                display: none;
+            }
+            a{
+                img{
+                    width: 25px;
+                }
+            }
+        }
+    }
+}
 
