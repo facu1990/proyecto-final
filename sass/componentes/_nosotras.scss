@@ -1,0 +1,42 @@
+//estilos de pantalla nosotras
+
+.modulo-sobre-nosotras{
+    position: relative;
+    padding-bottom: 200px;
+    @media (max-width: 960px){
+        position: static;
+        padding-bottom: 10px;
+    }
+    .img-nosotras{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        object-fit: cover;
+        width: 60%;
+        height: 600px;
+        @media (max-width: 960px){
+            width: $width-principal;
+            height: 400px;    
+        }
+    }
+    .texto-sobre-nosotras{
+        position: absolute;
+        top: 70%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 30px;
+        width: 700px;
+        font-size: 14px;
+        @media (max-width: 960px){
+            width: $width-principal;
+            position: static;
+            transform: none;
+            text-align: justify;
+            align-items: center;
+            align-content: center;
+            padding-left: 50px;
+            padding-right: 50px;    
+        }
+    }
+}

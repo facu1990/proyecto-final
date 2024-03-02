@@ -1,0 +1,19 @@
+//estilos de pantalla confirmacion recibimos tu consulta
+
+.recibimos-tu-consulta {
+    padding: 15% 15% 15% 15%;
+    text-align: center;
+    @media screen and (max-width:576px){
+        padding: 20% 20% 20% 20%;
+        text-align: center;
+    }
+    .titulo {
+        text-align: center;
+        font-size: 25px;
+        font-style: normal;
+        .subtitulo{
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+}

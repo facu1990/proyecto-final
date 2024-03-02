@@ -1,0 +1,86 @@
+//estilos de pantalla contacto
+
+main{
+    .formulario{
+        padding-top: 5%;
+        padding-left: 15%;
+        padding-right: 15%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        gap: 30px;
+        .form-consulta input:focus-visible{
+            outline-color: $color-lima;
+            border-color: $color-lima;
+            box-shadow: none;            
+        }
+    }
+    .info-contacto{
+        width: $width-principal;
+        align-self: first baseline;
+        font-size: 16px;
+        line-height: 1.2;  
+    }
+    /*/// mq de tablet ///*/
+    @media (max-width: 768px) {
+        .formulario {
+            grid-template-columns: repeat(1, 1fr);
+            place-items: center;
+        }
+
+        .info-contacto{
+            text-align: center;
+        }
+    }
+    /*/// mq de mobile ///*/
+    @media (max-width: 576px) {
+        .formulario {
+            padding-left: 10%;
+            padding-right: 10%;
+            place-items: center;
+        }
+
+        .info-contacto{
+            text-align: center;
+        }
+    }
+}
+
+.input-consulta{
+    outline-color: $color-lima;
+    border-color: $color-lima;
+    box-shadow: none;
+}                
+
+/* estilo de input y boton formulario */
+
+.form-consulta div .input-nombre, .form-consulta div .input-email{
+    @include email-formulario-contacto;
+}
+
+.input-consulta{
+    @include input-consulta;
+}
+
+.boton-enviar{
+    @include boton-enviar-contacto;
+}
+
+.clic-boton:hover{
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.clic-boton:active{
+    transform: scale(0.9);
+    background-color: $color-lima;
+}
+
+.clic-action{
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.clic-action:hover{
+    transform: scale(0.9);
+}
